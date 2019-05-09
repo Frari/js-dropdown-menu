@@ -11,7 +11,6 @@
 .nav-bar{
   width: 100%;
   height: 200px;
-  border: 1px solid black;
 }
 .nav-left, .nav-right{
   height: 100%;
@@ -30,13 +29,15 @@
 .item-left{
   height: 100%;
   width: 33.33%;
-  border: 1px solid black;
   float: left;
 }
 .logo{
   width: 100%;
-  height: 100%;
+  height: 33.33%;
   display: flex;
+  background-image: url(img/logo.png);
+  background-size: cover;
+  margin-top: 65px;
 }
 .logo a img{
   width: 100%;
@@ -53,26 +54,30 @@
   color: #b9c0cc;
   display: block;
 }
-
+#black{
+  color: black;
+}
 /* sezione navbar destra */
 .item-right{
   width: 14%;
   height: 100%;
   float: left;
-  border: 1px solid black;
   position: relative;
 }
 .down{
   height: auto;
-  width: 150px;
-  border: 1px solid black;
+  max-width: 300px;
   position: absolute;
   top: 150px;
   left: 0;
   display: none;
+  box-shadow: 2px 2px #b9c0cc;
 }
 .down.comparso{
   display: block;
+}
+.down.black a {
+  color: black;
 }
 .down a{
   text-decoration: none;
@@ -81,4 +86,7 @@
   color: #b9c0cc;
   display: block;
   padding: 20px 30px;
+}
+.item-right a:hover, .left-black:hover{
+  color: black;
 }

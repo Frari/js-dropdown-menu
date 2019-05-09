@@ -1,4 +1,8 @@
 $('.item-right').mouseenter(function(){
+  $(this).children('.down').addClass('comparso');
+  // $(this).children('.down').addClass('black');
+});
 
-  $(this).children('.down').addclass('comparso');
+$('.item-right').mouseleave(function(){
+  $(this).children('.down').removeClass('comparso');
 });
